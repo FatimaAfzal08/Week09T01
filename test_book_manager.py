@@ -6,8 +6,8 @@ class TestBookManager(unittest.TestCase):
         self.manager = BookManager()
         # Add setup for test books here
                 # Add setup for test books here
-        self.book1 = {'isbn':'0000','title':'Book One', 'author':'Author A'}
-        self.book2 = {'isbn':'0002','title':'Book One', 'author':'Author A'}
+        self.book1 = {'isbn':1234,'title':'Book One', 'author':'Author A'}
+        self.book2 = {'isbn':1345,'title':'Book One', 'author':'Author A'}
         
 
     # Implement test methods here
@@ -18,12 +18,12 @@ class TestBookManager(unittest.TestCase):
         
     def test_remove_book(self):
         self.manager.add_book(self.book1)
-        self.manager.remove_book('0000')
+        self.manager.remove_book(1234)
         self.assertEqual(self.manager.list_books(),[])
 
     def test_remove_nonexistent_book(self):
         self.manager.add_book(self.book1)
-        self.manager.remove_book('0003')
+        self.manager.remove_book(1254)
         self.assertEqual(self.manager.list_books(),[self.book1])
         
 
