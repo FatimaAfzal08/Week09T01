@@ -7,7 +7,7 @@ class TestBookManager(unittest.TestCase):
         # Add setup for test books here
                 # Add setup for test books here
         self.book1 = {'isbn':'0000','title':'Book One', 'author':'Author A'}
-        self.book1 = {'isbn':'0002',''title':'Book One', 'author':'Author A'}
+        self.book1 = {'isbn':'0002','title':'Book One', 'author':'Author A'}
         
 
     # Implement test methods here
