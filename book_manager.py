@@ -12,7 +12,7 @@ class Book:
     def __repr__(self):
         return f"Book({self.isbn}, '{self.title}', '{self.author}')"
 
-  class BookManager:
+class BookManager:
     def __init__(self):
         self.books = []
 
